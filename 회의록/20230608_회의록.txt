@@ -1,0 +1,17 @@
+2023.06.08 회의록
+
+1. AI hub, 지능형 스마트팜 토마토(통합데이터)
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=534
+
+2. 토마토 우수농가 데이터 - open api 이용
+https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15042594
+3. AI hub, 노지, 시설 작물 질병 진단 이미지 - 토마토
+
+시설: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=153
+노지: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=147
+
+JSON 파일 열어서 데이터 프레임으로 변환후 결측치, 이상치 확인하기
+
+1. 생육환경데이터 csv: 김현경 / JSON form : 송호준, 황준하 / 이미지 : 정승빈
+2. open api 이용 토마토 우수농가 데이터 : 윤진석, 나석원
+1,2. AI hub, 노지, 시설 작물 질병 진단 이미지: 나석원(image 데이터 다운로드 및 배포)
