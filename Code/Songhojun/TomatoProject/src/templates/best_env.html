@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>environment</title>
+    <style>
+    .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>
+</head>
+<body>
+<br>
+<h1><strong><p class="text-primary"><img src={{url_for('static', filename="images/다운로드3.jfif")}} alt="Logo" width="50" height="50" class="d-inline-block align-text-top">Tomato disease Detecting</p></strong></h1>
+<br>
+      <div class="center-image">
+    <img src="/static/images/다운로드2.jfif" class="blur-image" width="1000" height="200" alt="My Image"/>
+  </div>
+    {% include "navbar.html" %}
+  <section>
+      <br>
+      <br>
+    <h3 class="h3 text-center mb-5" align="center"><strong>현재 토마토 최적환경 설정하기</strong></h3>
+
+        <div class="row wow fadeIn">
+          <div class="col-lg-6 col-md-12 px-4">
+            <form action="/" method="post">
+              <div class="form-group">
+                <label for="formGroupExampleInput">평균 온도</label>
+                <input type="text" name="avg_temp" required class="form-control" placeholder="평균 온도를 입력하세요.">
+              </div>
+                <br>
+
+              <div class="form-group">
+
+                <label for="formGroupExampleInput">토양 온도</label>
+
+                <input type="text" name="ground_temp" required class="form-control" placeholder="토양 온도를 입력하세요.">
+
+              </div>
+                <br>
+              <div class="form-group">
+
+                <label for="formGroupExampleInput">pH</label>
+
+                <input type="text" name="pH" required class="form-control" placeholder="현재 pH를 입력하세요.">
+
+              </div>
+                <br>
+              <div class="form-group">
+
+                <label for="formGroupExampleInput">CO2</label>
+
+                <input type="text" name="CO2" required class="form-control" placeholder="CO2양을 입력하세요.">
+
+              </div>
+                <br>
+              <button type="submit" class="btn btn-primary btn-md pull-right">예측하기</button>
+
+            </form>
+
+          </div>
+        </div>
+  </section>
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

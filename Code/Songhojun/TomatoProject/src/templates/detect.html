@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    #image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 300;
+    height : auto;
+  }
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .upload {
+   display: flex;
+   justify-content: right;
+   align-items: right;
+  }
+    .result {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .upload {
+  margin-right: 50px;
+}
+  .btn-group {
+  margin-left : 30px;
+}
+  .scroll-container {
+  height: 1000px;
+  overflow-y: scroll;
+}
+
+</style>
+
+
+</head>
+<body>
+<br>
+  <h1 class="text-primary"><strong><img src={{url_for('static', filename="images/다운로드3.jfif")}} alt="Logo" width="50" height="50" class="d-inline-block align-text-top">Tomato disease Detecting</strong></h1>
+<br>
+<div class="center-image">
+    <img src="/static/images/다운로드2.jfif" class="blur-image" width="1000" height="200" alt="My Image"/>
+</div>
+    {% include "navbar.html" %}
+    <br>
+
+    <br>
+    <div class="scroll-container">
+        <h3 align="center" style="color : blue"><i>질병으로 의심되는 부분을 올려주세요</i></h3>
+        <br>
+        <h5 align="center">정확한 결과를 위해서 <span class="text-danger"><strong><u>확대한 사진</u></strong></span>을 올려주세요</h5>
+            <br>
+        <br>
+        <div class="upload">
+        <form method="post" action="/detecting" enctype="multipart/form-data">
+            <input type="file" name="myfile" id="myfile"/>
+            <!-- <input type="submit" value="업로드"/> 이건 옛날 방식 -->
+            <button onclick="uploadFile()">업로드</button>
+        </div>
+<!--        <div class="result">-->
+<!--            <button id="resultButton" disabled>결과보기</button>-->
+<!--        </div>-->
+<!--        <div class="upload">-->
+<!--        <input type="file" id="myfile" name="myfile"">-->
+<!--        <button onclick="uploadFile()">업로드</button>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <div id="image-container"></div>-->
+<!--        <br>-->
+        <br>
+        <br>
+        </form>
+        <br>
+<!--      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">-->
+<!--          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>-->
+<!--          <label class="btn btn-outline-primary" for="btnradio1">Leaf</label>-->
+
+<!--          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">-->
+<!--          <label class="btn btn-outline-primary" for="btnradio2">disease2</label>-->
+
+<!--          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">-->
+<!--          <label class="btn btn-outline-primary" for="btnradio3">disease 3</label>-->
+<script>
+    function checkUploadStatus() {
+        var fileInput = document.getElementById("myfile");
+        var resultButton = document.getElementById("resultButton");
+        if (fileInput.files.length > 0) {
+            resultButton.disabled = false;
+        } else {
+            resultButton.disabled = true;
+    }
+    }
+    function uploadFile() {
+        var input = document.getElementById("myfile");
+        var file = input.files[0];
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var imageContainer = document.getElementById("image-container");
+            imageContainer.innerHTML = "";
+
+            var image = document.createElement("img");
+            image.onload = function() {
+                var maxWidth = 500;
+                var maxHeight = 500;
+
+                var originalWidth = this.width;
+                var originalHeight = this.height;
+
+                var ratio = Math.min(maxWidth / originalWidth, maxHeight / originalHeight);
+
+                var newWidth = originalWidth * ratio;
+                var newHeight = originalHeight * ratio;
+                image.width = newWidth;
+                image.height = newHeight;
+                imageContainer.appendChild(image);
+            };
+            image.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        };
+</script>
+</div>
+<!--<script>-->
+<!--    function displayImage() {-->
+<!--        fetch(e.target.result)-->
+<!--        .then(response => response.blob())-->
+<!--        .then(blob => {-->
+<!--            const imageUrl = URL.createObjectURL(blob);-->
+<!--            const imgElement = document.createElement('img');-->
+<!--            imgElement.src = imageUrl;-->
+<!--            const imageContainer = document.getElementById('image-container');-->
+<!--            imageContainer.appendChild(imgElement);-->
+<!--        })-->
+<!--        .catch(error => {-->
+<!--            console.error('Error:', error);-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+    </div>
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!--            var data={"image_url" : image.src};-->
+
+<!--            $.ajax({-->
+<!--                url : "/process_image",-->
+<!--                type : "POST",-->
+<!--                data : JSON.stringify(data),-->
+<!--                contentType:"application/json; charset=utf-8",-->
+<!--                sucess:function(response){-->
+<!--                    console.log(response);-->
+<!--                    },-->
+<!--                error: function(error){-->
+<!--                    console.error("Error", error);-->
+<!--                    }-->
+<!--                });-->
