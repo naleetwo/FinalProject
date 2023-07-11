@@ -1,4 +1,5 @@
 # AI 기반 토마토 질병·상태 분류 및 품질예측 모델 개발
+<br>
 
 ## 🤼 팀원소개
 [윤진석]() : 팀장 / 프로젝트 관리, 데이터 전처리, 분석 및 품질예측 모델 구현
@@ -12,7 +13,8 @@
 [정승빈]() : 팀원 / 데이터 수집 및 전처리, 생육 상태 판단 모델 구축, PPT, 발표
 
 [황준하]() : 팀원 / 데이터 수집 및 전처리, 질병진단 모델 구현
-
+<br>
+<br>
 
 ## 📚 사용언어 및 모듈
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></a>
@@ -23,7 +25,8 @@
 <a href="https://numpy.org/" target="_blank"><img src="https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white"/></a>
 <a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"/></a>
 <a href="https://www.r-project.org/" target="_blank"><img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white"/></a>
-
+<br>
+<br>
 
 ## 📁 폴더 분류
 
@@ -32,47 +35,44 @@
 [PPT](https://github.com/naleetwo/FinalProject/tree/master/PPT) : 프로젝트 기획안 및 최종 PPT 결과물 보관
 
 [회의록](https://github.com/naleetwo/FinalProject/tree/master/%ED%9A%8C%EC%9D%98%EB%A1%9D) : 회의일지 정리
+<br>
+<br>
+
+## 📋 프로젝트 개요
+
+### 1. 프로젝트 배경
+#### ① 세계 분쟁 및 기후재난·식량문제와 더불어 저출산 및 고령화가 진행중인 국내 문제로 인해 국내 농업 생산량과 농업종사 인구가 줄어듬
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/de5fd6f8-9613-4b83-86ec-6cbd2c73c01d" width = "640" height = "380"></img>
+</div>
+<br>
 
 
-## 프로젝트 개요
+#### ② 국내에서는 작물 생육과정 전반에 걸친 자동화 시스템을 구축하기 위해 한국형 스마트팜 모델을 도입
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/b80d6b6f-50e2-49ad-89d4-266abb0cb2db" width = "640" height = "380"></img>
+</div>
+<br>
 
-### 1. 프로젝트 소개
-    - 세계 분쟁 및 기후재난·식량문제와 더불어 저출산 및 고령화가 진행중인 국내 문제로 인해 국내 농업 생산량과 농업종사 인구가 줄어듬
-    - 국내에서는 작물 생육과정 전반에 걸친 자동화 시스템을 구축하기 위해 한국형 스마트팜 모델을 도입
-    - 작물 중 두번째로 생산량이 많은 토마토에 대하여 AI모델에 생산량을 
+    
+#### ③ 작물 중 두번째로 생산량이 많은 토마토에 대하여 스마트팜 기반이 되는 AI모델(생장예측 및 질병진단, 품질예측) 개발
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/fae700d3-41ef-4219-8035-3fdf2e9b313f" width = "640" height = "380"/>
+</div>
+<br>
+<br>
+<br>
 
-
-## 3. 데이터 분석
+### 2. 프로젝트 기간 : '23. 6. 5. ~ 7.12.
+<br>
         
-## 4. 결론
+### 3. 주요 프로젝트 성과
+
+#### 1) 품질예측 모델 생성
+    
 
 
-## 목차
-1. [팀원 소개](#팀원-소개)
-2. [사용 언어](#사용-언어)
-2. [자료 사이트](#자료-사이트)
-3. [자료 수집 기간](#자료-수집-기간)
-4. [폴더 구성](#폴더-구성)
-5. [비교할 요소](#비교할-요소)
-6. [분석 결과](#분석-결과)
-7. [자료별 구성요소 출처](#자료별-구성요소-출처)
-<br/><br/>
-
-## 모델 설명
-1. 목적 
-2. 사용방식
-   - 사진과 환경 정보를 입력
-3. 모델 구조
-   - 사진 모델
-     + 건강한 잎:1, 병든 잎:2, 덜핀 꽃:3, 만개한 꽃:4, 덜익은 열매:5, 다 익은 열매:6
-     + 사진을 업로드하면 분석하여 부위 이름 및 생육 크기를 출력
-     + 만약 사진이 잎이라면 질병 여부와 함께 감염시 해당 질병을 출력
-     + 만약 열매라면, 해당 열매가 익었는지 익지 않았는지 판별
-   - 환경 모델
-     +예상 수확 결과를 출력
-
-
-<토마토 project 참고 link>
+## 출처자료
 
 [토마토 농사로](https://www.nongsaro.go.kr/portal/ps/psb/psbl/workScheduleDtl.ps?menuId=PS00087&cntntsNo=30646&sKidofcomdtySeCode=210001&totalSearchYn=Y)
 
