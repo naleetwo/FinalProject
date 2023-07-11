@@ -25,6 +25,9 @@
 <a href="https://numpy.org/" target="_blank"><img src="https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white"/></a>
 <a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"/></a>
 <a href="https://www.r-project.org/" target="_blank"><img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white"/></a>
+<a href="https://www.r-project.org/" target="_blank"><img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white"/></a>
+<a href="https://www.r-project.org/" target="_blank"><img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=PyTorch&logoColor=white"/></a>
+
 <br>
 <br>
 
@@ -115,11 +118,14 @@
     <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/a478e8be-7348-439b-a98c-0b9a4e3658f7" width = "500" height = "340"/>
     <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/f95fa9d8-d543-4685-baf9-d183cbe110b4" width = "850" height = "380"/>
 </div><br>
+
 #### ② 생장 예측 모델
+
 #### 3) Web 서비스 구현
 <br>
 <br>
 <br>
+
 ## 🔒 출처 및 참고
 
 ### [토마토 농사로](https://www.nongsaro.go.kr)
