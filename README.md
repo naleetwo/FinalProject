@@ -95,6 +95,7 @@
     <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/70bb74ee-3c93-48ef-9c4a-92ddf690a647" width = "680" height = "380"/>
 </div>
 <br>
+
 #### 2) 질병진단 모델
 
 #### 3) Web 서비스 구현
