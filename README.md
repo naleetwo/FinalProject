@@ -2,7 +2,7 @@
 <br>
 
 ## 🤼 팀원소개
-[윤진석]() : 팀장 / 프로젝트 관리, 데이터 전처리, 분석 및 품질예측 모델 구현
+[윤진석](https://github.com/naleetwo/FinalProject/tree/master/Code/jinseok) : 팀장 / 프로젝트 관리, 데이터 전처리, 분석 및 품질예측 모델 구현
 
 [김현경]() : 팀원 / 데이터 수집 및 전처리, 분석 및 생육상태 판단 모델 구현
 
@@ -68,18 +68,75 @@
         
 ### 3. 주요 프로젝트 성과
 
-#### 1) 품질예측 모델 생성
-    
+#### 1) 품질예측 모델
+    - 환경데이터를 통해 품질(당도, 산도, 과중)을 예측하는 모델 구상
+    - 데이터의 결측치에 대한 다양한 접근(Simple Imputation, KNN Imputation, Multivariate feature Imputation 등) 및 이상치 허용기준을 확립해 다양한 데이터 셋 구성
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/6b1bbcd2-509a-4604-9a44-fcbb2bbc05f8" width = "680" height = "380"/>
+</div>
+<br>
+
+    - 준비한 데이터 셋에 다양한 ML 회귀모델(KNN, Linear, Lasso, Ridge, SVR 등) 테스트를 통한 최적 모델 탐색
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/372e9c21-4d62-46e0-bdca-c868931bdaa2" width = "680" height = "380"/>
+</div>
+<br>
+
+    - 「과중·당도 ML 예측모델」에 대한 회귀분석 및 모델생성
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/733e5d2a-c765-415b-8918-16f702e56400" width = "680" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/799a6176-e055-4221-9eba-09ed49f52754" width = "680" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/fab62044-286b-4df4-962c-4a976c60fc53" width = "680" height = "380"/>
+</div>
+<br>
+
+    - 「산도 DLL 분류모델」생성 * 카테고리화된 산도 Label 고려
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/70bb74ee-3c93-48ef-9c4a-92ddf690a647" width = "680" height = "380"/>
+</div>
+<br>
+#### 2) 질병진단 모델
+
+#### 3) Web 서비스 구현
 
 
-## 출처자료
+<br>
+<br>
+<br>
 
-[토마토 농사로](https://www.nongsaro.go.kr/portal/ps/psb/psbl/workScheduleDtl.ps?menuId=PS00087&cntntsNo=30646&sKidofcomdtySeCode=210001&totalSearchYn=Y)
+## 🔒 출처 및 참고
 
-[작물병 방재정보](http://www.knco.co.kr/portfolio-items/tomato/)
+### [토마토 농사로](https://www.nongsaro.go.kr)
+    - 농작업 일정 : https://www.nongsaro.go.kr/portal/ps/psb/psbl/workScheduleDtl.ps?menuId=PS00087&cntntsNo=30646&sKidofcomdtySeCode=210001&totalSearchYn=Y
+    - 이달의 농업기술 : http://www.nongsaro.go.kr/portal/ps/psv/psvr/psvre/curationDtl.ps?menuId=PS03352&srchCurationNo=1466&pageUnit=&pageIndex=1&sEraInfo=&sSrchAll=Y&sKidofcomdtySeCode=&sType=&srchStr=
+### [작물병 방재정보](http://www.knco.co.kr/portfolio-items/tomato/)
 
-[토마토 생육조사 정보](https://www.youtube.com/watch?v=ok0BOVvwxVE)
+### [토마토 생육조사 정보](https://www.youtube.com/watch?v=ok0BOVvwxVE)
 
-[토마토 생장시기별 최적환경정보(표준 데이터)](https://smartfarm.rda.go.kr/dtsv/grwhct_pub.do)
+### [토마토 생장시기별 최적환경정보(표준 데이터)](https://smartfarm.rda.go.kr/dtsv/grwhct_pub.do)
 
-[토마토 양수분관리 기초교육](https://samwha27.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8C%9C-%EA%B8%B0%EC%B4%88%EA%B5%90%EC%9C%A1-%EC%96%91%EC%88%98%EB%B6%84-%EA%B4%80%EB%A6%AC%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
+### [토마토 양수분관리 기초교육](https://samwha27.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8C%9C-%EA%B8%B0%EC%B4%88%EA%B5%90%EC%9C%A1-%EC%96%91%EC%88%98%EB%B6%84-%EA%B4%80%EB%A6%AC%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90)
+
+### [농넷 토마토 가격정보](https://www.nongnet.or.kr/front/M000000006/stats/totSearch.do?keyword=0803)
+
+### [농업전망](https://www.aglook.kr/event)
+
+### [AI-Hub / 지능형 스마트팜 통합 데이터(토마토)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100)
+
+### [농립축산식품부 - 스마트팜 사업내용](https://www.mafra.go.kr)
+    - 스마트팜 사업내용 : https://www.mafra.go.kr/home/5281/subview.do
+    - 농업경영체 등록정보 통계서비스 : http://uni.agrix.go.kr/docs7/biOlap/fixType.do?reportId=eqpt_oudor_area_item
+
+### [대한민국 정책브리핑](https://www.korea.kr/special/policyCurationView.do?newsId=148864055#L1)
+
+### [전자신문 – 인공지능이 농사짓는 시대.. 2세대 스마트팜 개발](https://www.etnews.com/20181114000242)
+
+### [조선경제 – “네덜란드는 농사99%가 스마트팜, IT강국 한국이 아직도 1% 라니](https://www.chosun.com/economy/weeklybiz/2021/02/05/YNKNBZAC4RBMFBRHSRI2EH3EHI/)
+
+### [국가농식품통계서비스 - 핵심지표](https://kass.mafra.go.kr/newkass/kas/consmr/core/selectList.do)
+
+### [농민신문 - 정책 – 반전 없는 곡물자급률 세계 최하위 수준](https://www.nongmin.com/article/20230607500551)
+
+### [SGIS 통계지리정보서비스 – 인구피라미드](https://sgis.kostat.go.kr/jsp/pyramid/pyramid1.jsp)
+
+### [한국농어촌공사 - 스마트팜 혁신밸리조성사업](https://www.ekr.or.kr/Kkrpub/webzine/2022/12/subpage-102.html)
