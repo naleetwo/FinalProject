@@ -4,15 +4,15 @@
 ## 🤼 팀원소개
 [윤진석](https://github.com/naleetwo/FinalProject/tree/master/Code/jinseok) : 팀장 / 프로젝트 관리, 데이터 전처리, 분석 및 품질예측 모델 구현
 
-[김현경]() : 팀원 / 데이터 수집 및 전처리, 분석 및 생육상태 판단 모델 구현
+[김현경](https://github.com/naleetwo/FinalProject/tree/master/Code/jinseok) : 팀원 / 데이터 수집 및 전처리, 분석 및 생육상태 판단 모델 구현
 
-[나석원]() : 팀원 / 데이터 수집 및 전처리, 분석 및 품질예측 모델 구현, PPT, 발표
+[나석원](https://github.com/naleetwo/FinalProject/tree/master/Code/SeokwonNa) : 팀원 / 데이터 수집 및 전처리, 분석 및 품질예측 모델 구현, PPT, 발표
 
-[송호준]() : 팀원 / 데이터 수집 및 전처리, 분석 및 품질예측 모델 구현 및 프로그램 개발, 프론트앤드 Web 구현
+[송호준](https://github.com/naleetwo/FinalProject/tree/master/Code/Songhojun) : 팀원 / 데이터 수집 및 전처리, 분석 및 품질예측 모델 구현 및 프로그램 개발, 프론트앤드 Web 구현
 
-[정승빈]() : 팀원 / 데이터 수집 및 전처리, 생육 상태 판단 모델 구축, PPT, 발표
+[정승빈](https://github.com/naleetwo/FinalProject/tree/master/Code/Seungbin) : 팀원 / 데이터 수집 및 전처리, 생육 상태 판단 모델 구축, PPT, 발표
 
-[황준하]() : 팀원 / 데이터 수집 및 전처리, 질병진단 모델 구현
+[황준하](https://github.com/naleetwo/FinalProject/tree/master/Code/Juna) : 팀원 / 데이터 수집 및 전처리, 질병진단 모델 구현
 <br>
 <br>
 
