@@ -96,15 +96,30 @@
 </div>
 <br>
 
-#### 2) 질병진단 모델
+#### 2) YOLO 모델
 
+    - 상 : 실제 해외 농가에서 사용되는 모습
+    - 좌 : 질병 진단 모델 Predict / 우 : 생장 예측 모델 Predict
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/2273e4bb-ee51-47d1-b207-cf3c4c8bf5f4" width = "800" height = "400"/><br>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/9d4ab035-7bfd-4e7c-8356-d24161ecde79" width = "250" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/567888d9-8b6b-4239-a6c9-d151a5354ea9" width = "550" height = "380"/>
+</div><br>
+
+
+    
+#### ① 질병 진단 모델
+    - 「Yolov8 훈련 결과」
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/1d7f0540-c5ec-47a9-83d7-c6ef4b326b0e" width = "350" height = "340"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/a478e8be-7348-439b-a98c-0b9a4e3658f7" width = "500" height = "340"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/f95fa9d8-d543-4685-baf9-d183cbe110b4" width = "850" height = "380"/>
+</div><br>
+#### ② 생장 예측 모델
 #### 3) Web 서비스 구현
-
-
 <br>
 <br>
 <br>
-
 ## 🔒 출처 및 참고
 
 ### [토마토 농사로](https://www.nongsaro.go.kr)
