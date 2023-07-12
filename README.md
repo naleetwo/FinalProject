@@ -132,6 +132,10 @@
     
 
 #### 3) Web 서비스 구현
+    - 웹 서비스 이용 시연
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/991686e4-ed64-4d21-be44-5c9df3509a56" width = "680" height = "380"/>
+</div>
 <br>
 <br>
 <br>
