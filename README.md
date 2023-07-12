@@ -85,13 +85,12 @@
 </div>
 <br>
 
-    - 「과중·당도 ML 예측모델」에 대한 회귀분석 및 모델생성
+    - 「과중·당도 ML 예측모델」회귀 예측모델생성
 <div align = "center">
-    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/733e5d2a-c765-415b-8918-16f702e56400" width = "680" height = "380"/>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/799a6176-e055-4221-9eba-09ed49f52754" width = "680" height = "380"/>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/fab62044-286b-4df4-962c-4a976c60fc53" width = "680" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/2af95d0c-b8d5-4fd9-8ddb-06fa61d4a5da" width = "680" height = "380"/>
 </div>
 <br>
+
 
     - 「산도 DLL 분류모델」생성 * 카테고리화된 산도 Label 고려
 <div align = "center">
@@ -100,26 +99,37 @@
 <br>
 
 #### 2) YOLO 모델
+    - Yolo v8을 활용한 질병상태 및 생육단계 판별 모델 구상
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/06707f6a-8420-428f-a8ab-f51359806541" width = "680" height = "380"/>
+</div>
+<br>
 
     - 상 : 실제 해외 농가에서 사용되는 모습
     - 좌 : 질병 진단 모델 Predict / 우 : 생장 예측 모델 Predict
 <div align = "center">
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/2273e4bb-ee51-47d1-b207-cf3c4c8bf5f4" width = "800" height = "400"/><br>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/9d4ab035-7bfd-4e7c-8356-d24161ecde79" width = "250" height = "380"/>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/567888d9-8b6b-4239-a6c9-d151a5354ea9" width = "550" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/2273e4bb-ee51-47d1-b207-cf3c4c8bf5f4" width = "680" height = "380"/><br>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/9d4ab035-7bfd-4e7c-8356-d24161ecde79" width = "240" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/567888d9-8b6b-4239-a6c9-d151a5354ea9" width = "440" height = "380"/>
+</div><br>
+    
+#### ① 질병 진단 모델
+    - 「질병진단 모델 훈련 결과」
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/5b2d687b-4dfb-4db8-ac34-c84f94225051" width = "680" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/a478e8be-7348-439b-a98c-0b9a4e3658f7" width = "400" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/5a2d9fd5-c081-4f8d-88e4-c1d68d9ea2b7" width = "600" height = "380"/>
+</div><br>
+
+#### ② 생장 예측 모델
+    - 「생육단계 판단 모델 훈련 결과」
+<div align = "center">
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/7efbe451-cee1-499e-a26c-6a72e9725312" width = "680" height = "380"/>
+    <img src = "https://github.com/naleetwo/FinalProject/assets/127948197/1c9f186c-0cea-4c70-8c32-cb0d39b45332" width = "680" height = "380"/>
 </div><br>
 
 
     
-#### ① 질병 진단 모델
-    - 「Yolov8 훈련 결과」
-<div align = "center">
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/1d7f0540-c5ec-47a9-83d7-c6ef4b326b0e" width = "350" height = "340"/>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/a478e8be-7348-439b-a98c-0b9a4e3658f7" width = "500" height = "340"/>
-    <img src = "https://github.com/naleetwo/FinalProject/assets/128697640/f95fa9d8-d543-4685-baf9-d183cbe110b4" width = "850" height = "380"/>
-</div><br>
-
-#### ② 생장 예측 모델
 
 #### 3) Web 서비스 구현
 <br>
@@ -145,7 +155,7 @@
 
 ### [AI-Hub / 지능형 스마트팜 통합 데이터(토마토)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100)
 
-### [농립축산식품부 - 스마트팜 사업내용](https://www.mafra.go.kr)
+### [농립축산식품부](https://www.mafra.go.kr)
     - 스마트팜 사업내용 : https://www.mafra.go.kr/home/5281/subview.do
     - 농업경영체 등록정보 통계서비스 : http://uni.agrix.go.kr/docs7/biOlap/fixType.do?reportId=eqpt_oudor_area_item
 
